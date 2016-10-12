@@ -1,0 +1,25 @@
+PODS:
+  - FCFileManager (1.0.18)
+  - LYCategory (1.2.13)
+  - MJRefresh (3.1.12)
+  - ModulePullRefresh (1.0.0):
+    - FCFileManager (~> 1.0.18)
+    - MJRefresh (~> 3.1.12)
+
+DEPENDENCIES:
+  - LYCategory (~> 1.2.4)
+  - ModulePullRefresh (from `../`)
+
+EXTERNAL SOURCES:
+  ModulePullRefresh:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FCFileManager: 3d13576da1f709d37460bd7669cdf07b9d6d8bc3
+  LYCategory: 49e85f827b0ff45988e1ef97edd0295ada94fa77
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  ModulePullRefresh: d15262b44b094d3bfc5b19550c676a65b4e4e280
+
+PODFILE CHECKSUM: 6edbc559dfacfbe73c387dd6fde62ca00e3c9af7
+
+COCOAPODS: 1.2.0
