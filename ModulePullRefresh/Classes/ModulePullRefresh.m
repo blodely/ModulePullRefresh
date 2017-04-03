@@ -43,12 +43,13 @@ NSString *const NAME_CONF_PULL_REFRESH = @"conf-pull-refresh";
 
 @implementation MJRefreshHeader (PullRefresh)
 
-
 - (void)setupAppStyle {
 	
 	if ([self isKindOfClass:[MJRefreshGifHeader class]]) {
 		__weak MJRefreshGifHeader *header = (MJRefreshGifHeader *)self;
 		[header setupAppStyle];
+	} else {
+		NSLog(@"ERROR {ModulePullRefresh}\n\tapp style setter\n");
 	}
 	
 }
