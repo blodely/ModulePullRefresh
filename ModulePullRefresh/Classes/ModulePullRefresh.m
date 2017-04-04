@@ -82,7 +82,7 @@ NSString *const NAME_CONF_PULL_REFRESH = @"conf-pull-refresh";
 		NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"pullrefresh" ofType:@"bundle"];
 		
 		if (bundlePath == nil) {
-			NSLog(@"\n\nERROR | NEED \"pullrefresh.bundle\" FILE IN PROJECT\n\n");
+			NSLog(@"\n\nERROR {ModulePullRefresh}\n\tNEED \"pullrefresh.bundle\" FILE IN PROJECT\n\n");
 			return;
 		}
 		
