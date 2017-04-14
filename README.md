@@ -25,7 +25,7 @@ pod "ModulePullRefresh"
 
 ## Author
 
-blodely, indie.luo@gmail.com
+Luo Yu, indie.luo@gmail.com
 
 ## License
 
