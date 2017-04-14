@@ -8,7 +8,15 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-ModulePullRefresh is available through [LYSpecs CocoaPods](https://github.com/blodely/LYSpecs). To install
+ModulePullRefresh is available through [LYSpecs CocoaPods](https://github.com/blodely/LYSpecs). 
+
+Can be added with following command:
+
+```
+pod repo add LYSpecs https://github.com/blodely/LYSpecs.git
+```
+
+To install
 it, simply add the following line to your Podfile:
 
 ```ruby
