@@ -23,7 +23,7 @@ Pull to refresh wrapper.
 
 	s.social_media_url = 'https://weibo.com/blodely'
 
-	s.ios.deployment_target = '8.0'
+	s.ios.deployment_target = '7.0'
 
 	s.source_files = 'ModulePullRefresh/Classes/**/*', 'ModulePullRefresh/Configurations/*.plist'
 
