@@ -12,7 +12,7 @@ ModulePullRefresh is available through [LYSpecs CocoaPods](https://github.com/bl
 
 Can be added with following command:
 
-```
+```bash
 pod repo add LYSpecs https://github.com/blodely/LYSpecs.git
 ```
 
@@ -20,12 +20,12 @@ To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "ModulePullRefresh"
+pod 'ModulePullRefresh'
 ```
 
 ## Author
 
-Luo Yu, indie.luo@gmail.com
+[Luo Yu](http://luoyu.space), indie.luo@gmail.com
 
 ## License
 
