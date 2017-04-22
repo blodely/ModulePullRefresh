@@ -5,14 +5,14 @@
 
 Pod::Spec.new do |s|
 	s.name             = 'ModulePullRefresh'
-	s.version          = '1.0.0'
+	s.version          = '1.0.1'
 	s.summary          = 'Module PullRefresh.'
 
 	s.description      = <<-DESC
 Pull to refresh wrapper.
 1. app style pre-configured.
 2. read configuration file for titles.
-3. min-os-version iOS 8.0.
+3. min-os-version iOS 7.0.
 							DESC
 
 	s.homepage         = 'https://github.com/blodely/ModulePullRefresh'
