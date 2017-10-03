@@ -1,7 +1,7 @@
 PODS:
   - FCFileManager (1.0.19)
   - LYCategory (1.2.26)
-  - MJRefresh (3.1.14.1)
+  - MJRefresh (3.1.15)
   - ModulePullRefresh (1.0.1):
     - FCFileManager (~> 1.0.18)
     - MJRefresh (~> 3.1.12)
@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FCFileManager: df8ae7498afedf9ca56dd0cd12335f04dbe96af3
   LYCategory: 4cdfffbde17b2ae2c869f2f8dea7e65248c74cdd
-  MJRefresh: 238e6a37e2dba12160ee3b79f6d2a2b26abcab42
+  MJRefresh: 9af70f5f9327a2cf87f0fb5929f35fcc2fa638ea
   ModulePullRefresh: 3e3b624045b254bbfec816d30a73ed592dd512b1
 
 PODFILE CHECKSUM: 0bfbebe009c7aabce3c3e497e92dac343d3c0dac
