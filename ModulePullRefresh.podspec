@@ -34,7 +34,7 @@ Pull to refresh wrapper.
 	# s.public_header_files = 'Pod/Classes/**/*.h'
 
 	s.frameworks = 'UIKit'
-	s.dependency 'MJRefresh', '~> 3.1.12'
+	s.dependency 'MJRefresh', '~> 3.1.15'
 	s.dependency 'FCFileManager', '~> 1.0.18'
 
 end
