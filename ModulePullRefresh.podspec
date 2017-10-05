@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
 	s.name             = 'ModulePullRefresh'
-	s.version          = '1.0.1'
+	s.version          = '1.0.2'
 	s.summary          = 'Module PullRefresh.'
 
 	s.description      = <<-DESC
