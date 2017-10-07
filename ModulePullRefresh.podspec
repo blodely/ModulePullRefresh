@@ -13,6 +13,7 @@ Pull to refresh wrapper.
 1. app style pre-configured.
 2. read configuration file for titles.
 3. min-os-version iOS 7.0.
+4. update lib for iOS 11 and iPhone X.
 							DESC
 
 	s.homepage         = 'https://github.com/blodely/ModulePullRefresh'
