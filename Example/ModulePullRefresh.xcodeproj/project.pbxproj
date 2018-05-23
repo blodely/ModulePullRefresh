@@ -69,7 +69,7 @@
 		9BCB9D46F46BE57886EBF6A0 /* Pods_ModulePullRefresh_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModulePullRefresh_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0700E32B407A2CDA35949C5 /* Pods-ModulePullRefresh_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModulePullRefresh_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModulePullRefresh_Example/Pods-ModulePullRefresh_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B54E991669783059EF19B73B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		C092F142427A739EC3576CB8 /* ModulePullRefresh.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ModulePullRefresh.podspec; path = ../ModulePullRefresh.podspec; sourceTree = "<group>"; };
+		C092F142427A739EC3576CB8 /* ModulePullRefresh.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ModulePullRefresh.podspec; path = ../ModulePullRefresh.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D5256F783C3D6A2FDAB55EE7 /* Pods-ModulePullRefresh_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModulePullRefresh_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModulePullRefresh_Tests/Pods-ModulePullRefresh_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -214,7 +214,6 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				D6B7CD2A934CC40BEC412FD8 /* [CP] Embed Pods Frameworks */,
-				28D0549163F66EB4AF383952 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,8 +232,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				EAA0599E22E1B346186D69C1 /* [CP] Embed Pods Frameworks */,
-				5305330B4BED9D8539657D6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,21 +305,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		28D0549163F66EB4AF383952 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModulePullRefresh_Example/Pods-ModulePullRefresh_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		30E8E09688F19D31D1AAC4A4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,21 +321,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5305330B4BED9D8539657D6B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModulePullRefresh_Tests/Pods-ModulePullRefresh_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8110C0D4D0238A60D17A0387 /* [CP] Check Pods Manifest.lock */ = {
@@ -396,21 +363,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModulePullRefresh_Example/Pods-ModulePullRefresh_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EAA0599E22E1B346186D69C1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModulePullRefresh_Tests/Pods-ModulePullRefresh_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
