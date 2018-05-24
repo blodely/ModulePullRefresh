@@ -93,6 +93,11 @@ NSString *const NAME_CONF_PULL_REFRESH = @"conf-pull-refresh";
 			[images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"pullrefresh.bundle%@", [image substringFromIndex:bundlePath.length]]]];
 		}
 		
+		if ([images count] == 0) {
+			NSLog(@"\n\nERROR {ModulePullRefresh}\n\t\"pullrefresh.bundle\" IS EMPTY\n\n");
+			return;
+		}
+		
 		// STATIC
 		[self setImages:@[images.firstObject,] forState:MJRefreshStateIdle];
 		
