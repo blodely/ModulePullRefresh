@@ -30,5 +30,12 @@
 		<key>conf-value</key>
 		<false/>
 	</dict>
+	<key>animate-rate</key>
+	<dict>
+		<key>name</key>
+		<string>动画每帧时间</string>
+		<key>conf-value</key>
+		<real>0.2</real>
+	</dict>
 </dict>
 </plist>
