@@ -60,6 +60,8 @@ NSString *const NAME_CONF_PULL_REFRESH = @"conf-pull-refresh";
 
 - (void)setupAppStyle {
 	
+	CGFloat rate = 0.2;
+	
 	{
 		// CONFIGURE TITLE
 		
@@ -74,6 +76,8 @@ NSString *const NAME_CONF_PULL_REFRESH = @"conf-pull-refresh";
 			[self setTitle:conf[@"title-pulling"][confValue] forState:MJRefreshStatePulling];
 			[self setTitle:conf[@"title-refreshing"][confValue] forState:MJRefreshStateRefreshing];
 		}
+		
+		rate = [conf[@"animate-rate"][confValue] floatValue];
 	}
 	
 	{
@@ -102,9 +106,9 @@ NSString *const NAME_CONF_PULL_REFRESH = @"conf-pull-refresh";
 		[self setImages:@[images.firstObject,] forState:MJRefreshStateIdle];
 		
 		// ANIMATE
-		[self setImages:images duration:[files count] * 0.2 forState:MJRefreshStateRefreshing];
-		[self setImages:images duration:[files count] * 0.2 forState:MJRefreshStatePulling];
-		[self setImages:images duration:[files count] * 0.2 forState:MJRefreshStateWillRefresh];
+		[self setImages:images duration:[files count] * rate forState:MJRefreshStateRefreshing];
+		[self setImages:images duration:[files count] * rate forState:MJRefreshStatePulling];
+		[self setImages:images duration:[files count] * rate forState:MJRefreshStateWillRefresh];
 	}
 }
 
