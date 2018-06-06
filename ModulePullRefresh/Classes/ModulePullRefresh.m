@@ -90,7 +90,7 @@ NSString *const NAME_CONF_PULL_REFRESH = @"conf-pull-refresh";
 			return;
 		}
 		
-		NSArray *files = [FCFileManager listFilesInDirectoryAtPath:bundlePath];
+		NSArray *files = [[FCFileManager listFilesInDirectoryAtPath:bundlePath] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
 		
 		NSMutableArray *images = [NSMutableArray arrayWithCapacity:1];
 		for (NSString *image in files) {
