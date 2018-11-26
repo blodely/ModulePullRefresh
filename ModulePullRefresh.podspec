@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
 	s.name             = 'ModulePullRefresh'
-	s.version          = '1.0.5'
+	s.version          = '1.0.6'
 	s.summary          = 'Module PullRefresh.'
 
 	s.description      = <<-DESC
@@ -36,6 +36,5 @@ Pull to refresh wrapper.
 
 	s.frameworks = 'UIKit'
 	s.dependency 'MJRefresh', '~> 3.1.15'
-	s.dependency 'FCFileManager', '~> 1.0.18'
 
 end

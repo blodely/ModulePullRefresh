@@ -7,7 +7,6 @@
 //
 
 #import "ModulePullRefresh.h"
-#import <FCFileManager/FCFileManager.h>
 
 
 NSString *const LIB_PULL_REFRESH_BUNDLE_ID = @"org.cocoapods.ModulePullRefresh";
@@ -24,7 +23,9 @@ NSString *const NAME_CONF_PULL_REFRESH = @"conf-pull-refresh";
 	
 	confpath = [[NSBundle mainBundle] pathForResource:NAME_CONF_PULL_REFRESH ofType:@"plist"];
 	
-	if (confpath == nil || [confpath isEqualToString:@""] == YES || [FCFileManager isFileItemAtPath:confpath] == NO) {
+	if (confpath == nil ||
+		[confpath isEqualToString:@""] == YES ||
+		[[NSFileManager defaultManager] fileExistsAtPath:confpath] == NO) {
 		
 		NSLog(@"PullRefresh WARNING\n\tAPP CONFIGURATION FILE WAS NOT FOUND.\n\t%@", confpath);
 		
@@ -33,7 +34,8 @@ NSString *const NAME_CONF_PULL_REFRESH = @"conf-pull-refresh";
 	}
 	
 	// TRY TO READ APP CONFIGURATION
-	NSDictionary *conf = [FCFileManager readFileAtPathAsDictionary:confpath];
+	
+	NSDictionary *conf = [NSDictionary dictionaryWithContentsOfFile:confpath];
 	
 	if (conf == nil) {
 		NSLog(@"PullRefresh ERROR\n\tCONFIGURATION FILE WAS NEVER FOUND.");
@@ -97,11 +99,12 @@ NSString *const NAME_CONF_PULL_REFRESH = @"conf-pull-refresh";
 			return;
 		}
 		
-		NSArray *files = [[FCFileManager listFilesInDirectoryAtPath:bundlePath] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+		NSDirectoryEnumerator *enumerator = [[NSFileManager defaultManager] enumeratorAtPath:bundlePath];
+		NSArray *files = [enumerator.allObjects sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
 		
 		NSMutableArray *images = [NSMutableArray arrayWithCapacity:1];
 		for (NSString *image in files) {
-			[images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"pullrefresh.bundle%@", [image substringFromIndex:bundlePath.length]]]];
+			[images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"pullrefresh.bundle/%@", image]]];
 		}
 		
 		if ([images count] == 0) {
