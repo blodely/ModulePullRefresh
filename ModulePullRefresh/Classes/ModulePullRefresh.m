@@ -7,11 +7,14 @@
 //
 
 #import "ModulePullRefresh.h"
-#import "FCFileManager.h"
+#import <FCFileManager/FCFileManager.h>
+
 
 NSString *const LIB_PULL_REFRESH_BUNDLE_ID = @"org.cocoapods.ModulePullRefresh";
 
 NSString *const NAME_CONF_PULL_REFRESH = @"conf-pull-refresh";
+
+// MARK: - ModulePullRefresh
 
 @implementation ModulePullRefresh
 
@@ -41,6 +44,8 @@ NSString *const NAME_CONF_PULL_REFRESH = @"conf-pull-refresh";
 
 @end
 
+// MARK: - MJRefreshHeader
+
 @implementation MJRefreshHeader (PullRefresh)
 
 - (void)setupAppStyle {
@@ -55,6 +60,8 @@ NSString *const NAME_CONF_PULL_REFRESH = @"conf-pull-refresh";
 }
 
 @end
+
+// MARK: - MJRefreshGifHeader
 
 @implementation MJRefreshGifHeader (PullRefresh)
 
