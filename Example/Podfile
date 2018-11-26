@@ -1,18 +1,12 @@
-source 'https://github.com/blodely/LYSpecs.git'
-source 'https://github.com/CocoaPods/Specs.git'
-
-platform :ios, '8.0'
+platform :ios, '10.0'
 
 use_frameworks!
 
 target 'ModulePullRefresh_Example' do
-  pod 'ModulePullRefresh', :path => '../'
-  
-  pod 'LYCategory', '~> 1.2.4'
+	pod 'ModulePullRefresh', :path => '../'
+	pod 'LYCategory'
 
-  target 'ModulePullRefresh_Tests' do
-    inherit! :search_paths
-
-    
-  end
+	target 'ModulePullRefresh_Tests' do
+		inherit! :search_paths
+	end
 end

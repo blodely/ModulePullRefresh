@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42C10BE79F1F949AE71D9A80 /* Pods_ModulePullRefresh_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCB9D46F46BE57886EBF6A0 /* Pods_ModulePullRefresh_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -21,11 +20,12 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		80FAFE1308DE5DDDCB65B3DA /* Pods_ModulePullRefresh_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FA86C280A1B450F720E911 /* Pods_ModulePullRefresh_Example.framework */; };
 		895439A21E7F74510028BE9C /* LYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 895439A01E7F74510028BE9C /* LYTestViewController.m */; };
 		895439A31E7F74510028BE9C /* LYTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895439A11E7F74510028BE9C /* LYTestViewController.xib */; };
 		895439A91E7F797C0028BE9C /* pullrefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 895439A81E7F797C0028BE9C /* pullrefresh.bundle */; };
 		895439AB1E7F7A470028BE9C /* conf-pull-refresh.plist in Resources */ = {isa = PBXBuildFile; fileRef = 895439AA1E7F7A470028BE9C /* conf-pull-refresh.plist */; };
-		A0DCFD55409AD19A9CBB8C57 /* Pods_ModulePullRefresh_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFFD2E7D72C46B2D624690C /* Pods_ModulePullRefresh_Tests.framework */; };
+		AF36F1FBF848B194F88C1C07 /* Pods_ModulePullRefresh_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA6E655A0B024A031BC2558 /* Pods_ModulePullRefresh_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,17 +59,17 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6693C7F4473F187FA38EFFD8 /* Pods-ModulePullRefresh_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModulePullRefresh_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModulePullRefresh_Tests/Pods-ModulePullRefresh_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6CFFD2E7D72C46B2D624690C /* Pods_ModulePullRefresh_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModulePullRefresh_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8954399F1E7F74510028BE9C /* LYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTestViewController.h; sourceTree = "<group>"; };
 		895439A01E7F74510028BE9C /* LYTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTestViewController.m; sourceTree = "<group>"; };
 		895439A11E7F74510028BE9C /* LYTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYTestViewController.xib; sourceTree = "<group>"; };
 		895439A81E7F797C0028BE9C /* pullrefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pullrefresh.bundle; sourceTree = "<group>"; };
 		895439AA1E7F7A470028BE9C /* conf-pull-refresh.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "conf-pull-refresh.plist"; sourceTree = "<group>"; };
-		9BCB9D46F46BE57886EBF6A0 /* Pods_ModulePullRefresh_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModulePullRefresh_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FA86C280A1B450F720E911 /* Pods_ModulePullRefresh_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModulePullRefresh_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0700E32B407A2CDA35949C5 /* Pods-ModulePullRefresh_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModulePullRefresh_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModulePullRefresh_Example/Pods-ModulePullRefresh_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B54E991669783059EF19B73B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C092F142427A739EC3576CB8 /* ModulePullRefresh.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ModulePullRefresh.podspec; path = ../ModulePullRefresh.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CBA6E655A0B024A031BC2558 /* Pods_ModulePullRefresh_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModulePullRefresh_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5256F783C3D6A2FDAB55EE7 /* Pods-ModulePullRefresh_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModulePullRefresh_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModulePullRefresh_Tests/Pods-ModulePullRefresh_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,7 +81,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				42C10BE79F1F949AE71D9A80 /* Pods_ModulePullRefresh_Example.framework in Frameworks */,
+				80FAFE1308DE5DDDCB65B3DA /* Pods_ModulePullRefresh_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				A0DCFD55409AD19A9CBB8C57 /* Pods_ModulePullRefresh_Tests.framework in Frameworks */,
+				AF36F1FBF848B194F88C1C07 /* Pods_ModulePullRefresh_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +138,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				9BCB9D46F46BE57886EBF6A0 /* Pods_ModulePullRefresh_Example.framework */,
-				6CFFD2E7D72C46B2D624690C /* Pods_ModulePullRefresh_Tests.framework */,
+				A6FA86C280A1B450F720E911 /* Pods_ModulePullRefresh_Example.framework */,
+				CBA6E655A0B024A031BC2558 /* Pods_ModulePullRefresh_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				D6B7CD2A934CC40BEC412FD8 /* [CP] Embed Pods Frameworks */,
+				B9B7396D2654CC96D5DB81A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -341,21 +341,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D6B7CD2A934CC40BEC412FD8 /* [CP] Embed Pods Frameworks */ = {
+		B9B7396D2654CC96D5DB81A3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ModulePullRefresh_Example/Pods-ModulePullRefresh_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FCFileManager/FCFileManager.framework",
 				"${BUILT_PRODUCTS_DIR}/LYCategory/LYCategory.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/ModulePullRefresh/ModulePullRefresh.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FCFileManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LYCategory.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ModulePullRefresh.framework",
