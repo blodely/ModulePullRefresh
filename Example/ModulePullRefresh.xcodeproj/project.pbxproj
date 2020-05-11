@@ -346,17 +346,13 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ModulePullRefresh_Example/Pods-ModulePullRefresh_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ModulePullRefresh_Example/Pods-ModulePullRefresh_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LYCategory/LYCategory.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/ModulePullRefresh/ModulePullRefresh.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LYCategory.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
@@ -364,7 +360,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModulePullRefresh_Example/Pods-ModulePullRefresh_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ModulePullRefresh_Example/Pods-ModulePullRefresh_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
