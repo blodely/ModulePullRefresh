@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
 	s.name             = 'ModulePullRefresh'
-	s.version          = '1.12.0'
+	s.version          = '1.12.1'
 	s.summary          = 'Module PullRefresh.'
 
 	s.description      = <<-DESC
@@ -27,8 +27,10 @@ Pull to refresh wrapper.
 
 	s.ios.deployment_target = '9.0'
 
-	s.source_files = 'ModulePullRefresh/Classes/**/*', 'ModulePullRefresh/Configurations/*.plist'
+	s.source_files = 'ModulePullRefresh/Classes/**/*'
 
+	s.resources = 'ModulePullRefresh/Configurations/*.plist'
+	
 	# s.resource_bundles = {
 	#   'ModulePullRefresh' => ['ModulePullRefresh/Assets/*.png']
 	# }
