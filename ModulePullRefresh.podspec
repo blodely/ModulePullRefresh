@@ -5,15 +5,16 @@
 
 Pod::Spec.new do |s|
 	s.name             = 'ModulePullRefresh'
-	s.version          = '1.0.6'
+	s.version          = '1.12.0'
 	s.summary          = 'Module PullRefresh.'
 
 	s.description      = <<-DESC
 Pull to refresh wrapper.
 1. app style pre-configured.
 2. read configuration file for titles.
-3. min-os-version iOS 7.0.
+3. min-os-version iOS 9.0.
 4. update lib for iOS 11 and iPhone X.
+5. Xcode12=1.12; Xcode11=1.11
 							DESC
 
 	s.homepage         = 'https://github.com/blodely/ModulePullRefresh'
@@ -24,7 +25,7 @@ Pull to refresh wrapper.
 
 	s.social_media_url = 'https://weibo.com/blodely'
 
-	s.ios.deployment_target = '7.0'
+	s.ios.deployment_target = '9.0'
 
 	s.source_files = 'ModulePullRefresh/Classes/**/*', 'ModulePullRefresh/Configurations/*.plist'
 
@@ -35,6 +36,6 @@ Pull to refresh wrapper.
 	# s.public_header_files = 'Pod/Classes/**/*.h'
 
 	s.frameworks = 'UIKit'
-	s.dependency 'MJRefresh', '~> 3.1.15'
+	s.dependency 'MJRefresh', '~> 3.5.0'
 
 end
