@@ -1,8 +1,8 @@
 PODS:
-  - LYCategory (1.2.37)
-  - MJRefresh (3.1.15.7)
-  - ModulePullRefresh (1.0.6):
-    - MJRefresh (~> 3.1.15)
+  - LYCategory (1.2.44)
+  - MJRefresh (3.5.0)
+  - ModulePullRefresh (1.12.0):
+    - MJRefresh (~> 3.5.0)
 
 DEPENDENCIES:
   - LYCategory
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LYCategory: 0c3b48db41f99ee4fafc7debe374b8d22beaf207
-  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
-  ModulePullRefresh: c4c54389165053661b03b6f642374884a91b20b4
+  LYCategory: 6d50178f59af079fd9016d3d1b8969f92d09eace
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  ModulePullRefresh: a290f5f71c9c06d91a644472a12a403aef940f33
 
 PODFILE CHECKSUM: bd20d7dd10a265d525107ab916dd86b2b7a398d1
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.1
