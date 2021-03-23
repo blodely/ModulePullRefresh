@@ -37,5 +37,10 @@
 		<key>conf-value</key>
 		<real>0.15</real>
 	</dict>
+	<key>node-to-prof</key>
+	<dict>
+		<key>avalue</key>
+		<string>test</string>
+	</dict>
 </dict>
 </plist>
