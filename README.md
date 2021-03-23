@@ -15,6 +15,10 @@ it, simply add the following line to your Podfile:
 pod 'ModulePullRefresh'
 ```
 
+## Xcode and SDK versions
+
+- 1.12 for Xcode 12, with lowest iOS 9.0 depolyment target version.
+
 ## Author
 
 [Luo Yu](http://luoyu.space), indie.luo@gmail.com
