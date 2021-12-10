@@ -24,7 +24,7 @@ NSString *const TestCellIdentifier = @"TestCellIdentifier";
 @implementation LYTestViewController
 
 - (instancetype)init {
-	if (self = [super initWithNibName:@"LYTestViewController" bundle:[NSBundle mainBundle]]) {
+	if (self = [super init]) {
 	}
 	return self;
 }
@@ -32,7 +32,25 @@ NSString *const TestCellIdentifier = @"TestCellIdentifier";
 - (void)loadView {
 	[super loadView];
 	
-	[tbPull registerClass:[UITableViewCell class] forCellReuseIdentifier:TestCellIdentifier];
+	{
+		self.view.backgroundColor = [UIColor whiteColor];
+	}
+	
+	{
+		UITableView *view = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+		view.translatesAutoresizingMaskIntoConstraints = NO;
+		view.delegate = self;
+		view.dataSource = self;
+		[self.view addSubview:view];
+		tbPull = view;
+		
+		[view.leftAnchor constraintEqualToAnchor:self.view.leftAnchor].active = YES;
+		[view.rightAnchor constraintEqualToAnchor:self.view.rightAnchor].active = YES;
+		[view.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = YES;
+		[view.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
+		
+		[tbPull registerClass:[UITableViewCell class] forCellReuseIdentifier:TestCellIdentifier];
+	}
 }
 
 - (void)viewDidLoad {
