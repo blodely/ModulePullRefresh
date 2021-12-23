@@ -37,6 +37,7 @@ NSString *const TestCellIdentifier = @"TestCellIdentifier";
 	}
 	
 	{
+		// MARK: DEFAULT TABLE VIEW
 		UITableView *view = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
 		view.translatesAutoresizingMaskIntoConstraints = NO;
 		view.delegate = self;
@@ -57,6 +58,7 @@ NSString *const TestCellIdentifier = @"TestCellIdentifier";
     [super viewDidLoad];
 	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
 	
+	// MARK: SAMPLE CODE HERE
 	tbPull.mj_header = [MJRefreshGifHeader headerWithRefreshingBlock:^{
 		[self performSelector:@selector(loadData) withObject:nil afterDelay:1];
 	}];
